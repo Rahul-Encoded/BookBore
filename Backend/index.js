@@ -11,8 +11,21 @@ app.get('/', (req, res) => {
 	return res.status(234).send("Welcome to the BookBore");
 });
 
+
 import userRouter from "./routes/books.routes.js"
 app.use("/api/v1/books", userRouter);
+
+// Middleware for handling CORS POLICY
+// Option 1: Allow All Origins with Default of cors(*)
+// app.use(cors());
+
+//Option 2: Allow custom origins
+app.use(cors({
+	origin: "http://localhost:3000",
+	methods: ["GET", "POST", "PUT", "DELETE"],
+	allowedHeaders: ["Content-Type"]
+}))
+
 
 mongoose
 	.connect(MONGODB_URI)
