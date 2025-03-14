@@ -1,10 +1,10 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
-import CreateBooks from './pages/CreateBooks'
-import DeleteBook from './pages/DeleteBook'
-import EditBook from './pages/EditBook'
-import ShowBooks from './pages/ShowBooks'
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import CreateBooks from './pages/CreateBooks';
+import DeleteBook from './pages/DeleteBook';
+import EditBook from './pages/EditBook';
+import ShowBooks from './pages/ShowBooks';
 
 function App() {
   return (
@@ -18,4 +18,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
